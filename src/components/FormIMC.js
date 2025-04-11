@@ -38,7 +38,7 @@ const FormIMC = () => {
                 value={altura}
                 onChangeText={setAltura}
             />
-            <Button title="Calcular IMC" onPress={calcularIMC} />
+            <Button style={styles.button} title="Calcular IMC" onPress={calcularIMC} />
             {imc && <Result imc={imc} />}
             {imc && <Classification imc={imc} />} 
             {imc && <IdealWeight altura={altura} />} 
@@ -49,13 +49,13 @@ const FormIMC = () => {
 
 const styles = StyleSheet.create({ // Estilos para o formulário
     formContainer: {
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#ddd',
         padding: 16,
         borderRadius: 10,
     },
     input: {
         height: 40,
-        borderColor: 'gray',
+        borderColor: 'f0f0f0',
         borderWidth: 1,
         marginBottom: 12,
         paddingHorizontal: 8,

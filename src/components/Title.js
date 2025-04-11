@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: 24,
+        color: '#f0f0f0',
     },
 });
 
